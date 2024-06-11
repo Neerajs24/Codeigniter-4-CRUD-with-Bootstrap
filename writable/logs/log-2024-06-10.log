@@ -1,0 +1,36 @@
+CRITICAL - 2024-06-10 07:47:21 --> ParseError: syntax error, unexpected variable "$routes"
+[Method: POST, Route: user-form]
+in APPPATH\Config\Routes.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp 1\\htdocs\\CRUD\\public\\index.php')
+CRITICAL - 2024-06-10 07:47:39 --> Error: Undefined constant "config\string"
+[Method: POST, Route: user-form]
+in APPPATH\Config\Routes.php on line 23.
+ 1 SYSTEMPATH\Router\RouteCollection.php(340): require()
+ 2 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp 1\\htdocs\\CRUD\\public\\index.php')
+CRITICAL - 2024-06-10 18:03:28 --> ErrorException: Undefined variable $user_obj
+[Method: GET, Route: edit-view/5]
+in APPPATH\Views\edit_user.php on line 18.
+ 1 APPPATH\Views\edit_user.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_obj', 'C:\\xampp 1\\htdocs\\CRUD\\app\\Views\\edit_user.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp 1\\htdocs\\CRUD\\app\\Views\\edit_user.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit_user', [], true)
+ 5 APPPATH\Controllers\userCrud.php(37): view('edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserCrud->singleUser('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp 1\\htdocs\\CRUD\\public\\index.php')
